@@ -139,19 +139,15 @@ version = "0.11.0"
 description = "Postgres Broker for Dramatiq Task Queue"
 category = "main"
 optional = false
-python-versions = "^3.6"
-files = []
-develop = false
+python-versions = ">=3.5,<4.0"
+files = [
+    {file = "dramatiq-pg-0.11.0.tar.gz", hash = "sha256:810cfdf5876cbf9df767d7aaf0511a89ab63e0d19be546051e6b37b37e56a012"},
+    {file = "dramatiq_pg-0.11.0-py3-none-any.whl", hash = "sha256:5ba2cef33ddd7410587bfbfd539a01a609fb07a7790874f5deb760ab21ef270c"},
+]
 
 [package.dependencies]
-dramatiq = "^1.5"
-tenacity = "^8"
-
-[package.source]
-type = "git"
-url = "https://gitlab.com/dalibo/dramatiq-pg.git"
-reference = "HEAD"
-resolved_reference = "c19d7c79d6d658de17e781611d5fbb89ffc75150"
+dramatiq = ">=1.5,<2.0"
+tenacity = ">=5.1.1"
 
 [[package]]
 name = "mypy-extensions"
@@ -318,4 +314,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "275ed4a473597729fb2b3e98bee5d6d93bb82048594a627bdb8feebde5a51fb8"
+content-hash = "edfca25e62a6466f9cb7d917f7b17ce63ae42b60073c7d5986fc9a2c1f713704"
